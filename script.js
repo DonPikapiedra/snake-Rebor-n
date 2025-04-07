@@ -34,10 +34,10 @@ const colors = {
 // Configuración de Audio (con rutas de ejemplo)
 // !! RECUERDA CREAR LA CARPETA 'sounds' Y PONER TUS ARCHIVOS !!
 const sounds = {
-    eat: new Audio('sounds/eat.wav'),
-    lose: new Audio('sounds/lose.wav'),
-    achievement: new Audio('sounds/achievement.wav'),
-    music: new Audio('sounds/music.mp3')
+    eat: new Audio('sounds/eat.mp3'),
+    lose: new Audio('sounds/game_over.mp3'),
+    achievement: new Audio('sounds/puntoextra.mp3'),
+    music: new Audio('sounds/musica_fondo.mp3')
 };
 sounds.music.loop = true;
 sounds.music.volume = 0.3;
