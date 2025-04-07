@@ -1,26 +1,25 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
-    <div class="game-container">
+    <h1 class="title">SNAKE REBORN</h1>
+    <div class="scores-container">
+        <div id="score">Puntos: 0</div>
+        <div id="highScore">Record: 0</div>
+    </div>
+
+    <div id="gameArea">
         <canvas id="gameCanvas" width="400" height="400"></canvas>
-        <div class="score-board">
-            <span id="score">Puntos: 0</span>
-            <span id="highScore">Record: 0</span>
-        </div>
-        <div class="controls">
-            <button id="pauseBtn">Pausa</button>
-        </div>
-        <div class="overlay" id="overlay">
-            <div id="overlayText"></div>
+        <div id="gameOverlay">
+            <div id="overlayText">
+            </div>
         </div>
     </div>
-    <audio id="eatSound" src="sounds/eat.wav"></audio>
+
+    <button id="pauseBtn">Pausa / Reanudar</button>
+
+    <audio id="eatSound" src="sounds/eat.mp3"></audio>
+    <audio id="loseSound" src="sounds/game_over.mp3"></audio>
+    <audio id="startSound" src="sounds/iniciojuego.mp3"></audio>
+    <audio id="achievementSound" src="sounds/puntoextra.mp3"></audio>
+    <audio id="backgroundMusic" src="sounds/musica_fondo.mp3" loop></audio>
+
     <script src="script.js"></script>
 </body>
-</html>
